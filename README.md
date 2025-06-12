@@ -38,3 +38,25 @@ docker-compose up --build
 # Check the React Frontend:
 
 Open your browser and go to http://localhost:8080. This is the React app running inside your Docker container.
+
+# Task 3: Change file Structure (Simplified)
+
+.
+├── docker-compose.yml
+├── backend/
+│   ├── server.js
+│   ├── Dockerfile
+│   └── package.json
+├── frontend/
+│   ├── Dockerfile
+│   └── [React App files]
+
+
+# Task 4: Add mongo-express to Manage MongoDB
+
+Add a mongo-express service to your docker-compose.yml.
+
+Open http://localhost:8081 to access the MongoDB UI.
+
+
+

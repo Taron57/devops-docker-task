@@ -21,6 +21,15 @@ services:
     networks:
       - mongo-network
 
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:3000"
+    depends_on:
+      - web
+    networks:
+      - mongo-network
+
 
 volumes:
   mongo-data:

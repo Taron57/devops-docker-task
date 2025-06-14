@@ -13,8 +13,12 @@
    # Copy the rest of the application code to the container
    COPY . .
 
+
+   # Build the React app
+   RUN npm run build
+
    # Expose the port the app runs on
    EXPOSE 3000
 
    # Command to run the application
-   CMD ["npm", "start"]
+   CMD ["npm", "start", "run", "build"]
